@@ -1,0 +1,6 @@
+[submodule "JarvisServerAndSocketLibrary"]
+	path = JarvisServerAndSocketLibrary
+	url = https://github.com/aarongoodermuth/JarvisServerAndSocketLibrary.git
+[submodule "JsonCPP"]
+	path = jsoncpp
+	url = https://github.com/open-source-parsers/jsoncpp.git

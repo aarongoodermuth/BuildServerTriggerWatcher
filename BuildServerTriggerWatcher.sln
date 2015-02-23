@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BuildServerTriggerWatcher", "BuildServerTriggerWatcher\BuildServerTriggerWatcher.vcxproj", "{0C3102C5-5640-462E-B6B0-6AFD65A5126D}"
+	ProjectSection(ProjectDependencies) = postProject
+		{B84F7231-16CE-41D8-8C08-7B523FF4225B} = {B84F7231-16CE-41D8-8C08-7B523FF4225B}
+		{E6766FBC-C3F1-43FA-9245-AD150C9FE9D8} = {E6766FBC-C3F1-43FA-9245-AD150C9FE9D8}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "JarvisServerAndSocketLibrary", "JarvisServerAndSocketLibrary\JarvisServerAndSocketLibrary\JarvisServerAndSocketLibrary.vcxproj", "{E6766FBC-C3F1-43FA-9245-AD150C9FE9D8}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "lib_json", "jsoncpp\makefiles\vs71\lib_json.vcxproj", "{B84F7231-16CE-41D8-8C08-7B523FF4225B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Both|Win32 = Both|Win32
+		Debug|Win32 = Debug|Win32
+		dummy|Win32 = dummy|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0C3102C5-5640-462E-B6B0-6AFD65A5126D}.Both|Win32.ActiveCfg = Release|Win32
+		{0C3102C5-5640-462E-B6B0-6AFD65A5126D}.Both|Win32.Build.0 = Release|Win32
+		{0C3102C5-5640-462E-B6B0-6AFD65A5126D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{0C3102C5-5640-462E-B6B0-6AFD65A5126D}.Debug|Win32.Build.0 = Debug|Win32
+		{0C3102C5-5640-462E-B6B0-6AFD65A5126D}.dummy|Win32.ActiveCfg = Debug|Win32
+		{0C3102C5-5640-462E-B6B0-6AFD65A5126D}.dummy|Win32.Build.0 = Debug|Win32
+		{0C3102C5-5640-462E-B6B0-6AFD65A5126D}.Release|Win32.ActiveCfg = Release|Win32
+		{0C3102C5-5640-462E-B6B0-6AFD65A5126D}.Release|Win32.Build.0 = Release|Win32
+		{E6766FBC-C3F1-43FA-9245-AD150C9FE9D8}.Both|Win32.ActiveCfg = Both|Win32
+		{E6766FBC-C3F1-43FA-9245-AD150C9FE9D8}.Both|Win32.Build.0 = Both|Win32
+		{E6766FBC-C3F1-43FA-9245-AD150C9FE9D8}.Debug|Win32.ActiveCfg = Debug|Win32
+		{E6766FBC-C3F1-43FA-9245-AD150C9FE9D8}.Debug|Win32.Build.0 = Debug|Win32
+		{E6766FBC-C3F1-43FA-9245-AD150C9FE9D8}.dummy|Win32.ActiveCfg = Debug|Win32
+		{E6766FBC-C3F1-43FA-9245-AD150C9FE9D8}.dummy|Win32.Build.0 = Debug|Win32
+		{E6766FBC-C3F1-43FA-9245-AD150C9FE9D8}.Release|Win32.ActiveCfg = Release|Win32
+		{E6766FBC-C3F1-43FA-9245-AD150C9FE9D8}.Release|Win32.Build.0 = Release|Win32
+		{B84F7231-16CE-41D8-8C08-7B523FF4225B}.Both|Win32.ActiveCfg = Release|Win32
+		{B84F7231-16CE-41D8-8C08-7B523FF4225B}.Both|Win32.Build.0 = Release|Win32
+		{B84F7231-16CE-41D8-8C08-7B523FF4225B}.Debug|Win32.ActiveCfg = Debug|Win32
+		{B84F7231-16CE-41D8-8C08-7B523FF4225B}.Debug|Win32.Build.0 = Debug|Win32
+		{B84F7231-16CE-41D8-8C08-7B523FF4225B}.dummy|Win32.ActiveCfg = dummy|Win32
+		{B84F7231-16CE-41D8-8C08-7B523FF4225B}.dummy|Win32.Build.0 = dummy|Win32
+		{B84F7231-16CE-41D8-8C08-7B523FF4225B}.Release|Win32.ActiveCfg = Release|Win32
+		{B84F7231-16CE-41D8-8C08-7B523FF4225B}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
