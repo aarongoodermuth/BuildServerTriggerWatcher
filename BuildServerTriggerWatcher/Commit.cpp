@@ -18,7 +18,7 @@ void Commit::PopulateFromJson(Json::Value jsonval)
 	_strAuthor = jsonval["author"].asString();
 	_strMsg = jsonval["message"].asString();
 
-	for (int i = 0; i < jsonval["files"].size(); i++)
+	for (unsigned int i = 0; i < jsonval["files"].size(); i++)
 		_vectstrFiles.push_back(jsonval["files"][i]["file"].asString());
 }
 
@@ -32,7 +32,7 @@ std::string Commit::GetString()
 	strRetVal.append(EmailLine(_strMsg));
 	strRetVal.append(EmailLine(" "));
 	strRetVal.append(EmailLine("Files Changed:"));
-	for (int i = 0; i < _vectstrFiles.size(); i++)
+	for (unsigned int i = 0; i < _vectstrFiles.size(); i++)
 	{
 		strRetVal.append(EmailLine(_vectstrFiles[i]));
 	}
