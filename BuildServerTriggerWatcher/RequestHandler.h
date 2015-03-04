@@ -1,5 +1,5 @@
 #pragma once
-#include "JarvisServerAndSocketLibrary/JarvisServerAndSocketLibrary.h"
+#include "..\JarvisServerAndSocketLibrary\JarvisServerAndSocketLibrary\JarvisServerAndSocketLibrary.h"
 /*#ifdef _DEBUG
 #pragma comment(lib, "C:\\Users\\aviantest\\documents\\visual studio 2013\\Projects\\BuildServerTriggerWatcher\\Debug\\JarvisServerAndSocketLibrary.lib")
 #else

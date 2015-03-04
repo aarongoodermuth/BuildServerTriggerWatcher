@@ -1,7 +1,7 @@
 #pragma once
 #include <string>
 #include <vector>
-#include "C:\jsoncpp\include\json\json.h"
+#include "..\jsoncpp\include\json\json.h"
 
 
 

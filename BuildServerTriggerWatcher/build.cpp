@@ -1,7 +1,8 @@
 #include <assert.h>
 #include "Commit.h"
 //#include "C:\jsoncpp\include\json\json.h"
-#include "json/json.h"
+#include "..\jsoncpp\include\json\json.h"
+#include <iostream>
 #include "build.h"
 
 #define DANIEL_IS_DONE 1
