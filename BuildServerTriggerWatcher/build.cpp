@@ -55,19 +55,6 @@ std::string StrUnescapeHTTP(std::string str)
 
 std::string SzCommandLineArg(std::string& strPostData)
 {
-#if DANIEL_IS_DONE
-
-	// daniel's code goes here
-
-	// here is what I want:
-	// the final product will look something like C:\build.bat -m "commit message goes here" > C:\buildlog.txt
-	// this function needs to return the '-m "commit message does here"' part. 
-	// you can find the commit message in the raw post data that I pass in through strPostData
-
-	// look here (https://confluence.atlassian.com/display/BITBUCKET/POST+hook+management) for the git message format. 
-	// might be as simple as looking for "message" a few times and parsing what is right after that.
-
-
 	//strip away the http header (aka just ge the json obj in string format)
 	int iposSearch = strPostData.find(SEARCH_KEY);
 	if (iposSearch == std::string::npos)
@@ -103,9 +90,6 @@ std::string SzCommandLineArg(std::string& strPostData)
 	}
 
 	return strRetVal;
-#else
-	return "";
-#endif
 }
 
 std::string SzCommand(std::string& strPostData)

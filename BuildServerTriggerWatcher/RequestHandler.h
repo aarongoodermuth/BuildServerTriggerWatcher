@@ -1,11 +1,6 @@
 #pragma once
 #include "..\JarvisServerAndSocketLibrary\JarvisServerAndSocketLibrary\JarvisServerAndSocketLibrary.h"
-/*#ifdef _DEBUG
-#pragma comment(lib, "C:\\Users\\aviantest\\documents\\visual studio 2013\\Projects\\BuildServerTriggerWatcher\\Debug\\JarvisServerAndSocketLibrary.lib")
-#else
-#pragma comment(lib, "C:\\Users\\aviantest\\documents\\visual studio 2013\\Projects\\BuildServerTriggerWatcher\\Release\\JarvisServerAndSocketLibrary.lib")
-#endif
-*/
+
 class RequestHandler :
 	public JarvisSS::IDataHandler
 {
