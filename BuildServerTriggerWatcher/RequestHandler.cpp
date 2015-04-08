@@ -16,6 +16,11 @@ RequestHandler::~RequestHandler()
 void RequestHandler::HandleData(JarvisSS::JarvisServer::DataHandlerParams* pdhp)
 {
 	std::string strRaw(std::string((char*)pdhp->pbBuf));
+	bool fMore = pdhp->fBufTooSmall;
+	while (fMore)
+	{
+		strRaw.append(pdhp->pjsock->PbRecieve(&fMore));
+	}
 #ifdef _DEBUG
 	std::cout << strRaw;
 	std::string strT("echo " + strRaw);
